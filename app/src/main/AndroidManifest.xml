@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_smartinvoice"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".GST_info"
+            android:exported="false" />
+        <activity
+            android:name=".OrderHistory"
+            android:exported="false" />
+        <activity
+            android:name=".UnpaidBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaidBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Product_Act"
+            android:exported="false" />
+        <activity
+            android:name=".App_Info"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Act"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_details"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Create"
+            android:exported="false" />
+        <activity
+            android:name=".Bill_Preview"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".Item_details"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_Act"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

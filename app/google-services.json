@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "271684111467",
+    "firebase_url": "https://smart-invoice-ddfdf-default-rtdb.firebaseio.com",
+    "project_id": "smart-invoice-ddfdf",
+    "storage_bucket": "smart-invoice-ddfdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271684111467:android:964199434656ff9055f52e",
+        "android_client_info": {
+          "package_name": "com.example.projectapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaQ2GTnmjmi7ZLQVd4bUsEV5CkG-iHux0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,116 @@
+<!-- activity_item_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/coolbackground"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Item Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerItemName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textViewItemName"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerItemName"
+        android:layout_marginTop="16dp"
+        android:text="Quantity"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQuantity"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Quantity"
+        android:inputType="number"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <TextView
+        android:id="@+id/textViewRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQuantity"
+        android:layout_marginTop="16dp"
+        android:text="Rate"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/editTextRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRate"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Rate"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <LinearLayout
+        android:id="@+id/gstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/editTextRate"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewGST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GST (%)"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerGST"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAddMoreItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gstlayout"
+        android:layout_marginTop="16dp"
+        android:text="Add More Items"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddMoreItems"
+        android:layout_marginTop="16dp"
+        android:text="Finish/Confirm"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

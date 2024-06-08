@@ -1,0 +1,26 @@
+<!-- res/layout/update_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- EditText for updating product name -->
+    <EditText
+        android:id="@+id/editTextUpdateProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Product Name"/>
+
+    <!-- EditText for updating rate -->
+    <EditText
+        android:id="@+id/editTextUpdateRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Rate"
+        android:inputType="numberDecimal"/>
+
+    <!-- Add other UI elements as needed -->
+
+
+
+</LinearLayout>

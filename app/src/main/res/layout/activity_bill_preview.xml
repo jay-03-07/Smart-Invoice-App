@@ -1,0 +1,105 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/coolbackground"
+    tools:context=".Bill_Preview">
+
+    <!-- Wrap the TableLayout inside a HorizontalScrollView -->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TableLayout -->
+        <TableLayout
+            android:id="@+id/tableLayoutItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- Table Header -->
+            <TableRow>
+                <TextView
+                    android:text="Sr No."
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+                <TextView
+                    android:text="Item"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+                <TextView
+                    android:text="Qty"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+                <TextView
+                    android:text="Price"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+                <TextView
+                    android:text="GST"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+                <TextView
+                    android:text="Tax"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+                <TextView
+                    android:text="Amount"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: ₹0.00"
+        android:layout_below="@id/horizontalScrollView"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonUnpaidBills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalAmount"
+        android:layout_marginTop="16dp"
+        android:text="Unpaid Bills"
+        android:background="@drawable/userlog_edittext"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonSaveAsPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonUnpaidBills"
+        android:layout_marginTop="16dp"
+        android:text="Save as PDF"
+        android:background="@drawable/userlog_edittext"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonPaidBills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalAmount"
+        android:layout_marginTop="16dp"
+        android:text="Paid Bills"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/userlog_edittext"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

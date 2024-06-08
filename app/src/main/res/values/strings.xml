@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Smart Invoice</string>
+
+    <string-array name="gst_values">
+        <item>3%</item>
+        <item>5%</item>
+        <item>12%</item>
+        <item>18%</item>
+        <item>28%</item>
+    </string-array>
+    <string name="enter_email">Please enter your email</string>
+    <string name="enter_password">Please enter your password</string>
+    <string name="login_successful">Login successful</string>
+    <string name="auth_failed">Authentication failed</string>
+</resources>

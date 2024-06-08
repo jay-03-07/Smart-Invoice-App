@@ -1,0 +1,94 @@
+<!-- activity_product.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/coolbackground"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Product"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editViewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewItemName"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Product Name"
+        android:inputType="text"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <TextView
+        android:id="@+id/textViewRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editViewItemName"
+        android:layout_marginTop="16dp"
+        android:text="Rate"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRate"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Rate"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_background_normal" />
+
+
+    <Button
+        android:id="@+id/buttonAddMoreItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRate"
+        android:layout_marginTop="16dp"
+        android:text="Add More Products" />
+
+    <TextView
+        android:id="@+id/textproducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddMoreItems"
+        android:layout_marginTop="16dp"
+        android:text="Product Details"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <!-- Header for ListView -->
+    <include layout="@layout/list_item_product"
+        android:id="@+id/productHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textproducts"/>
+
+    <ListView
+        android:id="@+id/listViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/productHeader"/>
+
+
+</RelativeLayout>
